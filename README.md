@@ -141,9 +141,4 @@ Tailwind CSS
 
 ⭐ If you find this project valuable, feel free to star it or share your feedback. Your support helps me grow as a developer.
 
-yaml
-Copy
-Edit
-
----
 
