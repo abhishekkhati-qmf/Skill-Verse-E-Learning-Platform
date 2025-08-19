@@ -1,144 +1,103 @@
-# 🎓 SkillVerse – Full-Stack E-Learning Platform
+# Skill-Verse: Full-Stack E-Learning Platform
+[![Ask DeepWiki](https://devin.ai/assets/askdeepwiki.png)](https://deepwiki.com/abhishekkhati-qmf/Skill-Verse-E-Learning-Platform)
 
-SkillVerse is a modern, scalable, full-stack e-learning web application built using **React**, **Redux Toolkit Query**, **Node.js**, and **MongoDB**, designed to bridge the gap between learners and educators. It supports secure payments through **Cashfree**, enabling a seamless learning experience from course enrollment to completion tracking.
+Skill-Verse is a comprehensive, full-stack e-learning platform built with the MERN stack (MongoDB, Express.js, React, Node.js) and integrated with modern tools like Redux Toolkit Query, Tailwind CSS, and Vite. The platform supports distinct roles for students and instructors, featuring secure payments via Cashfree and media management with Cloudinary.
 
-> ⚡ Built with performance, modularity, and real-world scalability in mind — ideal for production-grade deployments in the ed-tech space.
+## Key Features
 
----
+| Role/System        | Feature                                                                                              |
+| ------------------ | ---------------------------------------------------------------------------------------------------- |
+| 🧑‍🎓 **Student**      | Discover and search for courses, filter by category/price, enroll via secure payment, track progress. |
+| 👨‍🏫 **Instructor**   | Instructor dashboard, create and manage courses (CRUD), upload and edit lectures, publish/unpublish courses. |
+| 🔐 **Authentication** | Secure user registration and login using JSON Web Tokens (JWT) stored in cookies.                   |
+| 💳 **Payments**    | Integrated with Cashfree Payment Gateway for seamless course purchases.                                |
+| 📊 **Dashboard**   | Instructors can view key metrics like total sales and revenue with graphical data representation.      |
+| ⚙️ **Media**         | Efficient video uploads and management handled by Multer and Cloudinary.                             |
+| 🌗 **UI & Theme**    | Modern, responsive interface built with Shadcn/ui and Tailwind CSS, featuring a dark/light mode toggle. |
 
-### 🔗 Repository  
-➡️ **GitHub**: [SkillVerse – E-Learning Platform](https://github.com/abhishekkhati-qmf/Skill-Verse-E-Learning-Platform)
+## Tech Stack
 
----
+| Category         | Technology / Library                                                               |
+| ---------------- | ---------------------------------------------------------------------------------- |
+| **Frontend**     | React, Vite, Redux Toolkit (RTK Query), React Router, Tailwind CSS, Shadcn/ui, Axios |
+| **Backend**      | Node.js, Express.js                                                                |
+| **Database**     | MongoDB with Mongoose                                                              |
+| **Authentication** | JSON Web Tokens (JWT), bcryptjs                                                       |
+| **Payments**     | Cashfree Payment Gateway                                                             |
+| **File Storage** | Cloudinary, Multer                                                                   |
 
-## 🧠 Features Overview
+## Project Structure
 
-| Feature | Description |
-|--------|-------------|
-| 🧑‍🎓 **Student Dashboard** | Course catalog, enrollment, progress tracking, invoices |
-| 👨‍🏫 **Instructor Panel** | Create, manage & upload course content |
-| 💳 **Payments** | Fully integrated Cashfree Payment Gateway |
-| 🔐 **Auth** | Secure JWT-based login system |
-| 📊 **Admin (Planned)** | Platform analytics, user/course management (coming soon) |
+The repository is structured as a monorepo with separate directories for the client and server applications.
 
----
-
-## 🔧 Tech Stack
-
-| Layer        | Technologies Used                      |
-|--------------|----------------------------------------|
-| **Frontend** | React, Redux Toolkit Query, Tailwind CSS |
-| **Backend**  | Node.js, Express.js                    |
-| **Database** | MongoDB + Mongoose                     |
-| **Payments** | Cashfree Payment Gateway               |
-| **Auth**     | JWT (JSON Web Tokens)                  |
-
----
-
-## 📁 Project Structure
-
-SkillVerse/
-├── client/ # Frontend code (React)
-├── server/ # Backend code (Node.js + Express)
-├── uploads/ # Local file storage (gitignored)
-├── README.md
-└── ...
-
-yaml
-Copy
-Edit
-
----
+```
+skill-verse-e-learning-platform/
+├── client/       # React (Vite) frontend application
+└── server/       # Node.js (Express) backend application
+```
 
 ## 🚀 Getting Started
 
-### 📦 Prerequisites
-- Node.js v18+
-- MongoDB running locally or on Atlas
-- Cashfree Sandbox Account
+### Prerequisites
 
----
+- [Node.js](https://nodejs.org/en) (v18 or higher)
+- [MongoDB](https://www.mongodb.com/try/download/community) (local or a cloud instance like MongoDB Atlas)
+- [Cloudinary](https://cloudinary.com/) account for media storage
+- [Cashfree](https://www.cashfree.com/) account for payment processing
 
-### 🛠️ Setup Instructions
+### Installation
 
-#### 1️⃣ Clone the Repo
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/abhishekkhati-qmf/Skill-Verse-E-Learning-Platform.git
+    cd Skill-Verse-E-Learning-Platform
+    ```
 
-```bash
-git clone https://github.com/abhishekkhati-qmf/Skill-Verse-E-Learning-Platform.git
-cd Skill-Verse-E-Learning-Platform
-2️⃣ Backend (Server)
-bash
-Copy
-Edit
-cd server
-npm install
-cp .env.example .env   # Add your env variables
-npm run dev
-3️⃣ Frontend (Client)
-bash
-Copy
-Edit
-cd ../client
-npm install
-npm run dev
-🔐 Environment Variables
-Create a .env file in the server/ directory with:
+2.  **Set up the Backend:**
+    ```bash
+    # Navigate to the server directory
+    cd server
 
-env
-Copy
-Edit
-PORT=5000
-MONGODB_URI=your_mongodb_uri
-JWT_SECRET=your_secret
-CASHFREE_APP_ID=your_app_id
-CASHFREE_SECRET_KEY=your_secret_key
-🎯 Roadmap
-✅ Secure authentication
+    # Install dependencies
+    npm install
 
-✅ Course enrollment & tracking
+    # Create a .env file and add your environment variables (see below)
+    touch .env 
 
-✅ Cashfree integration
+    # Start the development server
+    npm run dev
+    ```
 
-🚧 Admin dashboard
+3.  **Set up the Frontend:**
+    ```bash
+    # Navigate to the client directory from the root folder
+    cd client
 
-🚧 Course reviews & ratings
+    # Install dependencies
+    npm install
 
-🚧 Real-time progress analytics
+    # Start the development server
+    npm run dev
+    ```
+    The client will be running on `http://localhost:5173` and the server on `http://localhost:8080`.
 
-📸 Screenshots (Add your own or let me generate UI mockups)
-Coming soon...
+### Environment Variables
 
-🤝 Contributing
-If you'd like to improve this project or contribute to future features:
+Create a `.env` file in the `server` directory and add the following variables:
 
-bash
-Copy
-Edit
-git fork https://github.com/abhishekkhati-qmf/Skill-Verse-E-Learning-Platform
-Then submit a PR or raise an issue.
+```env
+# Server Configuration
+PORT=8080
+MONGO_URI=your_mongodb_connection_string
 
-🧑‍💻 Author & Developer
-Abhishek Khati
-🎓 MCA | Frontend & MERN Stack Enthusiast
-🔗 LinkedIn – abhishekkhati-qmf
-📫 Reach out for collaboration, internships, or feedback.
+# JWT Configuration
+SECRET_KEY=your_super_secret_jwt_key
 
-📄 License
-This project is licensed under the MIT License.
+# Cloudinary Credentials
+CLOUD_NAME=your_cloudinary_cloud_name
+API_KEY=your_cloudinary_api_key
+API_SECRET=your_cloudinary_api_secret
 
-🙏 Acknowledgements
-React
-
-Redux Toolkit
-
-Node.js
-
-MongoDB
-
-Cashfree
-
-Tailwind CSS
-
-⭐ If you find this project valuable, feel free to star it or share your feedback. Your support helps me grow as a developer.
-
-
+# Cashfree Payments Credentials (use sandbox keys for development)
+APP_ID=your_cashfree_app_id
+CASHFREE_SECRET_KEY=your_cashfree_secret_key
