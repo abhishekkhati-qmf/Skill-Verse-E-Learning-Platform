@@ -41,11 +41,27 @@ You can check out the live app here: [Live Demo](https://skill-verse-front-end-f
 The repository is structured as a monorepo with separate directories for the client and server applications.
 
 ```
-skill-verse-e-learning-platform/
-├── client/       # React (Vite) frontend application
-└── server/       # Node.js (Express) backend application
+skill-verse-e-learning-platform/   
+├── client/              # React (Vite) frontend application
+| ├── public/
+| ├── src/
+| │ ├── app/
+| │ ├── assets/
+| │ ├── components/
+| │ ├── features/
+| │ ├── layout/
+| │ ├── lib/
+| │ ├── pages/
+├── server/                # Node.js (Express) backend application
+| ├── controllers/
+| ├── database/
+| ├── middlewares/
+| ├── models/
+| ├── routes/
+| ├── utils/
+| ├── .env
+| ├── .gitignore
 ```
-
 
 ## 🎯 Key Features Explained
 
