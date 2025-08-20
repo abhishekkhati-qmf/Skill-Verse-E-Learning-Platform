@@ -5,17 +5,17 @@ Skill-Verse is a comprehensive, full-stack e-learning platform built with the ME
 ## 📸 Screenshots
 
 ### Homepage
-![AI Recruiter Homepage](assets/HomePage.png)
+![HomePage](assets/HomePage.png)
 
 ## 📸 Screenshots
 
 ### Instructor Dashboard
-![AI Recruiter Dashboard](public/ai2.png)
+![Instructor Dashboard](assets/InstructorDashboard.png)
 
 ## 📸 Screenshots
 
 ### Edit Profile
-![AI Recruiter Homepage](public/ai3.png)
+![Edit Profile](assets/Profile.png)
 
 
 ## Key Features
