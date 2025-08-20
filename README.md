@@ -4,8 +4,8 @@ Skill-Verse is a comprehensive, full-stack e-learning platform built with the ME
 
 ## 🚀 Deployment
 
-This project is deployed on Vercel:  
-[![Deploy on Vercel](https://vercel.com/button)](https://skill-verse-front-end-f5pu.vercel.app/)
+You can check out the live app here: [Live Demo](https://skill-verse-front-end-f5pu.vercel.app/)
+
 
 ## 📸 Screenshots
 
