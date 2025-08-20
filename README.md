@@ -42,7 +42,7 @@ You can check out the live app here: [Live Demo](https://skill-verse-front-end-f
 | **Frontend**     | React, Vite, Redux Toolkit (RTK Query), React Router, Tailwind CSS, Shadcn/ui, Axios |
 | **Backend**      | Node.js, Express.js                                                                |
 | **Database**     | MongoDB with Mongoose                                                              |
-| **Authentication** | JSON Web Tokens (JWT), bcryptjs                                                       |
+| **Authentication** | JSON Web Tokens (JWT), bcryptjs                                                   |
 | **Payments**     | Cashfree Payment Gateway                                                             |
 | **File Storage** | Cloudinary, Multer                                                                   |
 
@@ -56,71 +56,6 @@ skill-verse-e-learning-platform/
 └── server/       # Node.js (Express) backend application
 ```
 
-## 🚀 Getting Started
-
-### Prerequisites
-
-- [Node.js](https://nodejs.org/en) (v18 or higher)
-- [MongoDB](https://www.mongodb.com/try/download/community) (local or a cloud instance like MongoDB Atlas)
-- [Cloudinary](https://cloudinary.com/) account for media storage
-- [Cashfree](https://www.cashfree.com/) account for payment processing
-
-### Installation
-
-1.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/abhishekkhati-qmf/Skill-Verse-E-Learning-Platform.git
-    cd Skill-Verse-E-Learning-Platform
-    ```
-
-2.  **Set up the Backend:**
-    ```bash
-    # Navigate to the server directory
-    cd server
-
-    # Install dependencies
-    npm install
-
-    # Create a .env file and add your environment variables (see below)
-    touch .env 
-
-    # Start the development server
-    npm run dev
-    ```
-
-3.  **Set up the Frontend:**
-    ```bash
-    # Navigate to the client directory from the root folder
-    cd client
-
-    # Install dependencies
-    npm install
-
-    # Start the development server
-    npm run dev
-    ```
-    The client will be running on `http://localhost:5173` and the server on `http://localhost:8080`.
-
-### Environment Variables
-
-Create a `.env` file in the `server` directory and add the following variables:
-
-```env
-# Server Configuration
-PORT=8080
-MONGO_URI=your_mongodb_connection_string
-
-# JWT Configuration
-SECRET_KEY=your_super_secret_jwt_key
-
-# Cloudinary Credentials
-CLOUD_NAME=your_cloudinary_cloud_name
-API_KEY=your_cloudinary_api_key
-API_SECRET=your_cloudinary_api_secret
-
-# Cashfree Payments Credentials (use sandbox keys for development)
-APP_ID=your_cashfree_app_id
-CASHFREE_SECRET_KEY=your_cashfree_secret_key```
 
 ## 🎯 Key Features Explained
 
@@ -195,7 +130,71 @@ As a result, learners experience **fast load times and smooth navigation**, even
 
 ---
 
+## 🚀 Getting Started
 
+### Prerequisites
+
+- [Node.js](https://nodejs.org/en) (v18 or higher)
+- [MongoDB](https://www.mongodb.com/try/download/community) (local or a cloud instance like MongoDB Atlas)
+- [Cloudinary](https://cloudinary.com/) account for media storage
+- [Cashfree](https://www.cashfree.com/) account for payment processing
+
+### Installation
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/abhishekkhati-qmf/Skill-Verse-E-Learning-Platform.git
+    cd Skill-Verse-E-Learning-Platform
+    ```
+
+2.  **Set up the Backend:**
+    ```bash
+    # Navigate to the server directory
+    cd server
+
+    # Install dependencies
+    npm install
+
+    # Create a .env file and add your environment variables (see below)
+    touch .env 
+
+    # Start the development server
+    npm run dev
+    ```
+
+3.  **Set up the Frontend:**
+    ```bash
+    # Navigate to the client directory from the root folder
+    cd client
+
+    # Install dependencies
+    npm install
+
+    # Start the development server
+    npm run dev
+    ```
+    The client will be running on `http://localhost:5173` and the server on `http://localhost:8080`.
+
+### Environment Variables
+
+Create a `.env` file in the `server` directory and add the following variables:
+
+```env
+# Server Configuration
+PORT=8080
+MONGO_URI=your_mongodb_connection_string
+
+# JWT Configuration
+SECRET_KEY=your_super_secret_jwt_key
+
+# Cloudinary Credentials
+CLOUD_NAME=your_cloudinary_cloud_name
+API_KEY=your_cloudinary_api_key
+API_SECRET=your_cloudinary_api_secret
+
+# Cashfree Payments Credentials (use sandbox keys for development)
+APP_ID=your_cashfree_app_id
+CASHFREE_SECRET_KEY=your_cashfree_secret_key
 
 ## 🚀 Deployment
 
