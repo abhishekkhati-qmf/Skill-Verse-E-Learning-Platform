@@ -120,7 +120,7 @@ API_SECRET=your_cloudinary_api_secret
 
 # Cashfree Payments Credentials (use sandbox keys for development)
 APP_ID=your_cashfree_app_id
-CASHFREE_SECRET_KEY=your_cashfree_secret_key
+CASHFREE_SECRET_KEY=your_cashfree_secret_key```
 
 ## 🎯 Key Features Explained
 
