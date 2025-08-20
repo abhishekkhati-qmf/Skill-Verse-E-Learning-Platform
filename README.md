@@ -2,6 +2,11 @@
 
 Skill-Verse is a comprehensive, full-stack e-learning platform built with the MERN stack (MongoDB, Express.js, React, Node.js) and integrated with modern tools like Redux Toolkit Query, Tailwind CSS, and Vite. The platform supports distinct roles for students and instructors, featuring secure payments via Cashfree and media management with Cloudinary.
 
+## 🚀 Deployment
+
+This project is deployed on Vercel:  
+[![Deploy on Vercel](https://vercel.com/button)](https://skill-verse-front-end-f5pu.vercel.app/)
+
 ## 📸 Screenshots
 
 ### Homepage
