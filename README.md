@@ -12,16 +12,6 @@ You can check out the live app here: [Live Demo](https://skill-verse-front-end-f
 ### Homepage
 ![HomePage](assets/HomePage.png)
 
-## 📸 Screenshots
-
-### Instructor Dashboard
-![Instructor Dashboard](assets/InstructorDashboard.png)
-
-## 📸 Screenshots
-
-### Edit Profile
-![Edit Profile](assets/Profile.png)
-
 
 ## Key Features
 
